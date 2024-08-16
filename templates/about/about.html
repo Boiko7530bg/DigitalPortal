@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <title>About - Digital Portal</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+        <div class="container">
+            <a href="{% url 'index' %}" class="navbar-brand">Digital Portal</a>
+            
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navmenu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto text-end">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">The team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--About Section-->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>About Digital Portal</h1>
+                    <p class="lead my-4">
+                        Welcome to Digital Portal, your one-stop solution for enhancing productivity and streamlining your daily tasks. Our platform is designed to simplify the complex and empower you with tools that make your work more efficient and enjoyable.
+                    </p>
+                    <p class="lead my-4">
+                        At Digital Portal, we believe that technology should work for you, not the other way around. That's why we've created an intuitive and user-friendly platform that helps you manage your projects, track progress, and collaborate with your team seamlessly.
+                    </p>
+                    <p class="lead my-4">
+                        Your daily work, simplified. Whether you’re managing a small team or overseeing multiple projects, Digital Portal provides the flexibility and features you need to stay organized and achieve your goals. Our tools are designed to adapt to your workflow, ensuring that you can focus on what really matters.
+                    </p>
+                    <p class="lead my-4">
+                        Our mission is to design the best solutions for you and your team. We understand the challenges of modern work environments, and our goal is to provide innovative solutions that make your job easier. From project management to team collaboration, our platform is built to support you every step of the way.
+                    </p>
+                    <p class="lead my-4">
+                        Join the Digital Portal community today and experience how our solutions can transform your work life. With our cutting-edge tools and dedicated support, you’ll be able to accomplish more with less effort. We’re here to help you succeed.
+                    </p>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="{% static 'images/showcase.svg' %}" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

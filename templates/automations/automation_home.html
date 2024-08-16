@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automations</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('{% static "images/background.png" %}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1 {
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            font-size: 2.5rem;
+            color: #fff;
+        }
+        .logout-button {
+            padding: 10px 20px;
+            background-color: #1f78b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .logout-button:hover {
+            background-color: #145a7c; /
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 50px;
+            padding-left: 50px;
+        }
+        .button-container button {
+            margin-bottom: 15px;
+            padding: 10px 20px;
+            width: 200px;
+            font-size: 1.2rem;
+            background-color: #66c2a5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: left;
+        }
+        .button-container button:hover {
+            background-color: #4c9a7f;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Automations</h1>
+        <button class="logout-button" onclick="location.href='{% url 'index' %}'">Log out</button>
+    </div>
+    <div class="button-container">
+        <button onclick="location.href='#'">Attendance trackers</button>
+        <button onclick="location.href='#'">Shift trackers</button>
+        <button onclick="location.href='#'">Measurement tool</button>
+        <button onclick="location.href='#'">Movement tool</button>
+    </div>
+</body>
+</html>
